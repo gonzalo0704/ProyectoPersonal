@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gonzalo Figueroa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script type="text/javascript" src="scripts/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.js"></script>
+
+  <script type="text/javascript" src="scripts/irarriba.js"></script>
+  
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Mi estilo -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/GF-1.png" width="40" height="40" align="center" border="0" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="definiciones.html">Competencias<img src="images/llave.png" width="20px" height="20px" /></a></li>
+        <li><a href="file:///C:/Users/Admin.PORTABLE/Desktop/ProyectoPersonal/inicio.html#carousel">Porfolio</a></li>
+        <li><a href="inicio.html/#Entrevistas">Entrevistas</a></li>
+        <li><a href="inicio.html/#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Competencias ..En construcción.. -->
+<div id="ec" class="container-fluid bg-2 text-center"></div>
+
+
+<a id="btnarriba"><img src="images/arriba.png" height="40px" width="40px"></a>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Gonzalo Figueroa <u>+598 93 633 480</u>            <img src="images/wpp.png" width="30" height="30"/> <a align="right" href="https://www.facebook.com/CrikerGF7"><img src="images/fbicon.png" width="30" height="30"/></a><a href="https://www.instagram.com/gonn96/"><img src="images/instaicon.png" width="42" height="42"/></a></p> 
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+     
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+<script type="text/javascript" src="scripts/enviar.js"></script>
+  
+</body>
+</html>
